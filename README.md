@@ -1,4 +1,4 @@
-#DEMO截图
+#DEMO截图,会一直更新...
 ##SFTextField:
 ##![Mou icon](http://g.recordit.co/G9tZ942Z3Z.gif)
 
@@ -14,7 +14,7 @@
 # 
 
 ##仿头条新闻滑动效果
-##![效果图](http://img.blog.csdn.net/20160320141214049)
+##![效果图](http://g.recordit.co/atDBaJBUmQ.gif)
 
 ##博客地址:http://blog.csdn.net/feng2qing
 
