@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9AE4BA641CA0E60200CE1205 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BA631CA0E60200CE1205 /* main.m */; };
+		9AE4BA671CA0E60200CE1205 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BA661CA0E60200CE1205 /* AppDelegate.m */; };
+		9AE4BA6F1CA0E60200CE1205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AE4BA6E1CA0E60200CE1205 /* Assets.xcassets */; };
+		9AE4BA721CA0E60200CE1205 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AE4BA701CA0E60200CE1205 /* LaunchScreen.storyboard */; };
+		9AE4BA7D1CA0E60200CE1205 /* _________Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BA7C1CA0E60200CE1205 /* _________Tests.m */; };
+		9AE4BA881CA0E60200CE1205 /* _________UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BA871CA0E60200CE1205 /* _________UITests.m */; };
+		9AE4BA971CA0E75D00CE1205 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BA961CA0E75D00CE1205 /* MainViewController.m */; };
+		9AE4BA9B1CA0E7B400CE1205 /* SFPackageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BA9A1CA0E7B400CE1205 /* SFPackageViewController.m */; };
+		9AE4BAA91CA0E7D300CE1205 /* FifthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BA9E1CA0E7D300CE1205 /* FifthTableViewController.m */; };
+		9AE4BAAA1CA0E7D300CE1205 /* FirstTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BAA01CA0E7D300CE1205 /* FirstTableViewController.m */; };
+		9AE4BAAB1CA0E7D300CE1205 /* FourthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BAA21CA0E7D300CE1205 /* FourthTableViewController.m */; };
+		9AE4BAAC1CA0E7D300CE1205 /* SecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BAA41CA0E7D300CE1205 /* SecondTableViewController.m */; };
+		9AE4BAAD1CA0E7D300CE1205 /* SixthTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BAA61CA0E7D300CE1205 /* SixthTableViewController.m */; };
+		9AE4BAAE1CA0E7D300CE1205 /* ThirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE4BAA81CA0E7D300CE1205 /* ThirdTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AE4BA791CA0E60200CE1205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE4BA571CA0E60200CE1205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE4BA5E1CA0E60200CE1205;
+			remoteInfo = "仿头条新闻滑动效果";
+		};
+		9AE4BA841CA0E60200CE1205 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AE4BA571CA0E60200CE1205 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE4BA5E1CA0E60200CE1205;
+			remoteInfo = "仿头条新闻滑动效果";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9AE4BA5F1CA0E60200CE1205 /* 仿头条新闻滑动效果.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "仿头条新闻滑动效果.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE4BA631CA0E60200CE1205 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9AE4BA651CA0E60200CE1205 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9AE4BA661CA0E60200CE1205 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9AE4BA6E1CA0E60200CE1205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9AE4BA711CA0E60200CE1205 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9AE4BA731CA0E60200CE1205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE4BA781CA0E60200CE1205 /* 仿头条新闻滑动效果Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿头条新闻滑动效果Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE4BA7C1CA0E60200CE1205 /* _________Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________Tests.m"; sourceTree = "<group>"; };
+		9AE4BA7E1CA0E60200CE1205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE4BA831CA0E60200CE1205 /* 仿头条新闻滑动效果UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "仿头条新闻滑动效果UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE4BA871CA0E60200CE1205 /* _________UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "_________UITests.m"; sourceTree = "<group>"; };
+		9AE4BA891CA0E60200CE1205 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AE4BA951CA0E75D00CE1205 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		9AE4BA961CA0E75D00CE1205 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		9AE4BA991CA0E7B400CE1205 /* SFPackageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFPackageViewController.h; sourceTree = "<group>"; };
+		9AE4BA9A1CA0E7B400CE1205 /* SFPackageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFPackageViewController.m; sourceTree = "<group>"; };
+		9AE4BA9D1CA0E7D300CE1205 /* FifthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FifthTableViewController.h; sourceTree = "<group>"; };
+		9AE4BA9E1CA0E7D300CE1205 /* FifthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FifthTableViewController.m; sourceTree = "<group>"; };
+		9AE4BA9F1CA0E7D300CE1205 /* FirstTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstTableViewController.h; sourceTree = "<group>"; };
+		9AE4BAA01CA0E7D300CE1205 /* FirstTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTableViewController.m; sourceTree = "<group>"; };
+		9AE4BAA11CA0E7D300CE1205 /* FourthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FourthTableViewController.h; sourceTree = "<group>"; };
+		9AE4BAA21CA0E7D300CE1205 /* FourthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FourthTableViewController.m; sourceTree = "<group>"; };
+		9AE4BAA31CA0E7D300CE1205 /* SecondTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondTableViewController.h; sourceTree = "<group>"; };
+		9AE4BAA41CA0E7D300CE1205 /* SecondTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondTableViewController.m; sourceTree = "<group>"; };
+		9AE4BAA51CA0E7D300CE1205 /* SixthTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SixthTableViewController.h; sourceTree = "<group>"; };
+		9AE4BAA61CA0E7D300CE1205 /* SixthTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SixthTableViewController.m; sourceTree = "<group>"; };
+		9AE4BAA71CA0E7D300CE1205 /* ThirdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdTableViewController.h; sourceTree = "<group>"; };
+		9AE4BAA81CA0E7D300CE1205 /* ThirdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AE4BA5C1CA0E60200CE1205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE4BA751CA0E60200CE1205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE4BA801CA0E60200CE1205 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9AE4BA561CA0E60200CE1205 = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA611CA0E60200CE1205 /* 仿头条新闻滑动效果 */,
+				9AE4BA7B1CA0E60200CE1205 /* 仿头条新闻滑动效果Tests */,
+				9AE4BA861CA0E60200CE1205 /* 仿头条新闻滑动效果UITests */,
+				9AE4BA601CA0E60200CE1205 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AE4BA601CA0E60200CE1205 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA5F1CA0E60200CE1205 /* 仿头条新闻滑动效果.app */,
+				9AE4BA781CA0E60200CE1205 /* 仿头条新闻滑动效果Tests.xctest */,
+				9AE4BA831CA0E60200CE1205 /* 仿头条新闻滑动效果UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AE4BA611CA0E60200CE1205 /* 仿头条新闻滑动效果 */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA951CA0E75D00CE1205 /* MainViewController.h */,
+				9AE4BA961CA0E75D00CE1205 /* MainViewController.m */,
+				9AE4BA9C1CA0E7BD00CE1205 /* SubController */,
+				9AE4BA981CA0E7A500CE1205 /* Soource */,
+				9AE4BAAF1CA0E7F600CE1205 /* Others */,
+				9AE4BA621CA0E60200CE1205 /* Supporting Files */,
+			);
+			path = "仿头条新闻滑动效果";
+			sourceTree = "<group>";
+		};
+		9AE4BA621CA0E60200CE1205 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA631CA0E60200CE1205 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AE4BA7B1CA0E60200CE1205 /* 仿头条新闻滑动效果Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA7C1CA0E60200CE1205 /* _________Tests.m */,
+				9AE4BA7E1CA0E60200CE1205 /* Info.plist */,
+			);
+			path = "仿头条新闻滑动效果Tests";
+			sourceTree = "<group>";
+		};
+		9AE4BA861CA0E60200CE1205 /* 仿头条新闻滑动效果UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA871CA0E60200CE1205 /* _________UITests.m */,
+				9AE4BA891CA0E60200CE1205 /* Info.plist */,
+			);
+			path = "仿头条新闻滑动效果UITests";
+			sourceTree = "<group>";
+		};
+		9AE4BA981CA0E7A500CE1205 /* Soource */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA991CA0E7B400CE1205 /* SFPackageViewController.h */,
+				9AE4BA9A1CA0E7B400CE1205 /* SFPackageViewController.m */,
+			);
+			name = Soource;
+			sourceTree = "<group>";
+		};
+		9AE4BA9C1CA0E7BD00CE1205 /* SubController */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA9D1CA0E7D300CE1205 /* FifthTableViewController.h */,
+				9AE4BA9E1CA0E7D300CE1205 /* FifthTableViewController.m */,
+				9AE4BA9F1CA0E7D300CE1205 /* FirstTableViewController.h */,
+				9AE4BAA01CA0E7D300CE1205 /* FirstTableViewController.m */,
+				9AE4BAA11CA0E7D300CE1205 /* FourthTableViewController.h */,
+				9AE4BAA21CA0E7D300CE1205 /* FourthTableViewController.m */,
+				9AE4BAA31CA0E7D300CE1205 /* SecondTableViewController.h */,
+				9AE4BAA41CA0E7D300CE1205 /* SecondTableViewController.m */,
+				9AE4BAA51CA0E7D300CE1205 /* SixthTableViewController.h */,
+				9AE4BAA61CA0E7D300CE1205 /* SixthTableViewController.m */,
+				9AE4BAA71CA0E7D300CE1205 /* ThirdTableViewController.h */,
+				9AE4BAA81CA0E7D300CE1205 /* ThirdTableViewController.m */,
+			);
+			name = SubController;
+			sourceTree = "<group>";
+		};
+		9AE4BAAF1CA0E7F600CE1205 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				9AE4BA651CA0E60200CE1205 /* AppDelegate.h */,
+				9AE4BA661CA0E60200CE1205 /* AppDelegate.m */,
+				9AE4BA6E1CA0E60200CE1205 /* Assets.xcassets */,
+				9AE4BA701CA0E60200CE1205 /* LaunchScreen.storyboard */,
+				9AE4BA731CA0E60200CE1205 /* Info.plist */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9AE4BA5E1CA0E60200CE1205 /* 仿头条新闻滑动效果 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE4BA8C1CA0E60200CE1205 /* Build configuration list for PBXNativeTarget "仿头条新闻滑动效果" */;
+			buildPhases = (
+				9AE4BA5B1CA0E60200CE1205 /* Sources */,
+				9AE4BA5C1CA0E60200CE1205 /* Frameworks */,
+				9AE4BA5D1CA0E60200CE1205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "仿头条新闻滑动效果";
+			productName = "仿头条新闻滑动效果";
+			productReference = 9AE4BA5F1CA0E60200CE1205 /* 仿头条新闻滑动效果.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9AE4BA771CA0E60200CE1205 /* 仿头条新闻滑动效果Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE4BA8F1CA0E60200CE1205 /* Build configuration list for PBXNativeTarget "仿头条新闻滑动效果Tests" */;
+			buildPhases = (
+				9AE4BA741CA0E60200CE1205 /* Sources */,
+				9AE4BA751CA0E60200CE1205 /* Frameworks */,
+				9AE4BA761CA0E60200CE1205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AE4BA7A1CA0E60200CE1205 /* PBXTargetDependency */,
+			);
+			name = "仿头条新闻滑动效果Tests";
+			productName = "仿头条新闻滑动效果Tests";
+			productReference = 9AE4BA781CA0E60200CE1205 /* 仿头条新闻滑动效果Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AE4BA821CA0E60200CE1205 /* 仿头条新闻滑动效果UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE4BA921CA0E60200CE1205 /* Build configuration list for PBXNativeTarget "仿头条新闻滑动效果UITests" */;
+			buildPhases = (
+				9AE4BA7F1CA0E60200CE1205 /* Sources */,
+				9AE4BA801CA0E60200CE1205 /* Frameworks */,
+				9AE4BA811CA0E60200CE1205 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AE4BA851CA0E60200CE1205 /* PBXTargetDependency */,
+			);
+			name = "仿头条新闻滑动效果UITests";
+			productName = "仿头条新闻滑动效果UITests";
+			productReference = 9AE4BA831CA0E60200CE1205 /* 仿头条新闻滑动效果UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AE4BA571CA0E60200CE1205 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Cocav;
+				TargetAttributes = {
+					9AE4BA5E1CA0E60200CE1205 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					9AE4BA771CA0E60200CE1205 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 9AE4BA5E1CA0E60200CE1205;
+					};
+					9AE4BA821CA0E60200CE1205 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 9AE4BA5E1CA0E60200CE1205;
+					};
+				};
+			};
+			buildConfigurationList = 9AE4BA5A1CA0E60200CE1205 /* Build configuration list for PBXProject "仿头条新闻滑动效果" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AE4BA561CA0E60200CE1205;
+			productRefGroup = 9AE4BA601CA0E60200CE1205 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9AE4BA5E1CA0E60200CE1205 /* 仿头条新闻滑动效果 */,
+				9AE4BA771CA0E60200CE1205 /* 仿头条新闻滑动效果Tests */,
+				9AE4BA821CA0E60200CE1205 /* 仿头条新闻滑动效果UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AE4BA5D1CA0E60200CE1205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE4BA721CA0E60200CE1205 /* LaunchScreen.storyboard in Resources */,
+				9AE4BA6F1CA0E60200CE1205 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE4BA761CA0E60200CE1205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE4BA811CA0E60200CE1205 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AE4BA5B1CA0E60200CE1205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE4BAAB1CA0E7D300CE1205 /* FourthTableViewController.m in Sources */,
+				9AE4BAAC1CA0E7D300CE1205 /* SecondTableViewController.m in Sources */,
+				9AE4BA9B1CA0E7B400CE1205 /* SFPackageViewController.m in Sources */,
+				9AE4BAAD1CA0E7D300CE1205 /* SixthTableViewController.m in Sources */,
+				9AE4BA671CA0E60200CE1205 /* AppDelegate.m in Sources */,
+				9AE4BAAA1CA0E7D300CE1205 /* FirstTableViewController.m in Sources */,
+				9AE4BA971CA0E75D00CE1205 /* MainViewController.m in Sources */,
+				9AE4BAAE1CA0E7D300CE1205 /* ThirdTableViewController.m in Sources */,
+				9AE4BAA91CA0E7D300CE1205 /* FifthTableViewController.m in Sources */,
+				9AE4BA641CA0E60200CE1205 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE4BA741CA0E60200CE1205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE4BA7D1CA0E60200CE1205 /* _________Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE4BA7F1CA0E60200CE1205 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE4BA881CA0E60200CE1205 /* _________UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AE4BA7A1CA0E60200CE1205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AE4BA5E1CA0E60200CE1205 /* 仿头条新闻滑动效果 */;
+			targetProxy = 9AE4BA791CA0E60200CE1205 /* PBXContainerItemProxy */;
+		};
+		9AE4BA851CA0E60200CE1205 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AE4BA5E1CA0E60200CE1205 /* 仿头条新闻滑动效果 */;
+			targetProxy = 9AE4BA841CA0E60200CE1205 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AE4BA701CA0E60200CE1205 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE4BA711CA0E60200CE1205 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AE4BA8A1CA0E60200CE1205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9AE4BA8B1CA0E60200CE1205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9AE4BA8D1CA0E60200CE1205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "仿头条新闻滑动效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9AE4BA8E1CA0E60200CE1205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "仿头条新闻滑动效果/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.---------";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9AE4BA901CA0E60200CE1205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "仿头条新闻滑动效果Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/仿头条新闻滑动效果.app/仿头条新闻滑动效果";
+			};
+			name = Debug;
+		};
+		9AE4BA911CA0E60200CE1205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "仿头条新闻滑动效果Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.---------Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/仿头条新闻滑动效果.app/仿头条新闻滑动效果";
+			};
+			name = Release;
+		};
+		9AE4BA931CA0E60200CE1205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "仿头条新闻滑动效果UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "仿头条新闻滑动效果";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9AE4BA941CA0E60200CE1205 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "仿头条新闻滑动效果UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.---------UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "仿头条新闻滑动效果";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AE4BA5A1CA0E60200CE1205 /* Build configuration list for PBXProject "仿头条新闻滑动效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE4BA8A1CA0E60200CE1205 /* Debug */,
+				9AE4BA8B1CA0E60200CE1205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE4BA8C1CA0E60200CE1205 /* Build configuration list for PBXNativeTarget "仿头条新闻滑动效果" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE4BA8D1CA0E60200CE1205 /* Debug */,
+				9AE4BA8E1CA0E60200CE1205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE4BA8F1CA0E60200CE1205 /* Build configuration list for PBXNativeTarget "仿头条新闻滑动效果Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE4BA901CA0E60200CE1205 /* Debug */,
+				9AE4BA911CA0E60200CE1205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE4BA921CA0E60200CE1205 /* Build configuration list for PBXNativeTarget "仿头条新闻滑动效果UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE4BA931CA0E60200CE1205 /* Debug */,
+				9AE4BA941CA0E60200CE1205 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AE4BA571CA0E60200CE1205 /* Project object */;
+}
