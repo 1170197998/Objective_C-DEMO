@@ -16,6 +16,12 @@
 ##仿头条新闻滑动效果
 ##![效果图](http://g.recordit.co/atDBaJBUmQ.gif)
 
+# 
+
+##TableViewSlideMultiButton,QQ聊天列表页
+##![效果图](http://g.recordit.co/oDJjUKuiD8.gif)
+
+
 ##博客地址:http://blog.csdn.net/feng2qing
 
 
