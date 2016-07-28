@@ -18,23 +18,6 @@
 		9A2C91E11D42247D004303B9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A2C91E01D42247D004303B9 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9A5AF8C91D123CD10048CEBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A5AF8A71D123CD00048CEBE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A5AF8AE1D123CD00048CEBE;
-			remoteInfo = FS_TextField;
-		};
-		9A5AF8D41D123CD20048CEBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9A5AF8A71D123CD00048CEBE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9A5AF8AE1D123CD00048CEBE;
-			remoteInfo = FS_TextField;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		9A2C91C11D4223C1004303B9 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9A2C91C21D4223C1004303B9 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -49,26 +32,10 @@
 		9A2C91CD1D4223C1004303B9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9A2C91E01D42247D004303B9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9A5AF8AF1D123CD00048CEBE /* SFTextField.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFTextField.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A5AF8C81D123CD10048CEBE /* SFTextField.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFTextField.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A5AF8D31D123CD20048CEBE /* SFTextField.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SFTextField.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A5AF8AC1D123CD00048CEBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A5AF8C51D123CD10048CEBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A5AF8D01D123CD20048CEBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -117,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				9A5AF8AF1D123CD00048CEBE /* SFTextField.app */,
-				9A5AF8C81D123CD10048CEBE /* SFTextField.xctest */,
-				9A5AF8D31D123CD20048CEBE /* SFTextField.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -143,42 +108,6 @@
 			productReference = 9A5AF8AF1D123CD00048CEBE /* SFTextField.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9A5AF8C71D123CD10048CEBE /* SFTextFieldTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9A5AF8DF1D123CD20048CEBE /* Build configuration list for PBXNativeTarget "SFTextFieldTests" */;
-			buildPhases = (
-				9A5AF8C41D123CD10048CEBE /* Sources */,
-				9A5AF8C51D123CD10048CEBE /* Frameworks */,
-				9A5AF8C61D123CD10048CEBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9A5AF8CA1D123CD10048CEBE /* PBXTargetDependency */,
-			);
-			name = SFTextFieldTests;
-			productName = FS_TextFieldTests;
-			productReference = 9A5AF8C81D123CD10048CEBE /* SFTextField.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		9A5AF8D21D123CD20048CEBE /* SFTextFieldUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9A5AF8E21D123CD20048CEBE /* Build configuration list for PBXNativeTarget "SFTextFieldUITests" */;
-			buildPhases = (
-				9A5AF8CF1D123CD20048CEBE /* Sources */,
-				9A5AF8D01D123CD20048CEBE /* Frameworks */,
-				9A5AF8D11D123CD20048CEBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9A5AF8D51D123CD20048CEBE /* PBXTargetDependency */,
-			);
-			name = SFTextFieldUITests;
-			productName = FS_TextFieldUITests;
-			productReference = 9A5AF8D31D123CD20048CEBE /* SFTextField.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -190,14 +119,6 @@
 				TargetAttributes = {
 					9A5AF8AE1D123CD00048CEBE = {
 						CreatedOnToolsVersion = 7.3.1;
-					};
-					9A5AF8C71D123CD10048CEBE = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 9A5AF8AE1D123CD00048CEBE;
-					};
-					9A5AF8D21D123CD20048CEBE = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 9A5AF8AE1D123CD00048CEBE;
 					};
 				};
 			};
@@ -215,8 +136,6 @@
 			projectRoot = "";
 			targets = (
 				9A5AF8AE1D123CD00048CEBE /* SFTextField */,
-				9A5AF8C71D123CD10048CEBE /* SFTextFieldTests */,
-				9A5AF8D21D123CD20048CEBE /* SFTextFieldUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,20 +153,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A5AF8C61D123CD10048CEBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A5AF8D11D123CD20048CEBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,34 +167,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9A5AF8C41D123CD10048CEBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9A5AF8CF1D123CD20048CEBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9A5AF8CA1D123CD10048CEBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9A5AF8AE1D123CD00048CEBE /* SFTextField */;
-			targetProxy = 9A5AF8C91D123CD10048CEBE /* PBXContainerItemProxy */;
-		};
-		9A5AF8D51D123CD20048CEBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9A5AF8AE1D123CD00048CEBE /* SFTextField */;
-			targetProxy = 9A5AF8D41D123CD20048CEBE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9A2C91C41D4223C1004303B9 /* LaunchScreen.storyboard */ = {
@@ -417,52 +295,6 @@
 			};
 			name = Release;
 		};
-		9A5AF8E01D123CD20048CEBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SFTextFieldTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.FS-TextFieldTests";
-				PRODUCT_NAME = SFTextField;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFTextField.app/SFTextField";
-			};
-			name = Debug;
-		};
-		9A5AF8E11D123CD20048CEBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SFTextFieldTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.FS-TextFieldTests";
-				PRODUCT_NAME = SFTextField;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SFTextField.app/SFTextField";
-			};
-			name = Release;
-		};
-		9A5AF8E31D123CD20048CEBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SFTextFieldUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.FS-TextFieldUITests";
-				PRODUCT_NAME = SFTextField;
-				TEST_TARGET_NAME = FS_TextField;
-			};
-			name = Debug;
-		};
-		9A5AF8E41D123CD20048CEBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = SFTextFieldUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.cocav.FS-TextFieldUITests";
-				PRODUCT_NAME = SFTextField;
-				TEST_TARGET_NAME = FS_TextField;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -480,24 +312,6 @@
 			buildConfigurations = (
 				9A5AF8DD1D123CD20048CEBE /* Debug */,
 				9A5AF8DE1D123CD20048CEBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9A5AF8DF1D123CD20048CEBE /* Build configuration list for PBXNativeTarget "SFTextFieldTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9A5AF8E01D123CD20048CEBE /* Debug */,
-				9A5AF8E11D123CD20048CEBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9A5AF8E21D123CD20048CEBE /* Build configuration list for PBXNativeTarget "SFTextFieldUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9A5AF8E31D123CD20048CEBE /* Debug */,
-				9A5AF8E41D123CD20048CEBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
