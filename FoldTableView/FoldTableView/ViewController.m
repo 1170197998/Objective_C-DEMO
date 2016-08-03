@@ -44,7 +44,7 @@
             
             for (NSInteger j = 0; j < 10; j ++) {
                 CellModel *cellModel = [[CellModel alloc] init];
-                cellModel.cellTitle = [NSString stringWithFormat:@"第%ld组,第%ld行",i + 1,(long)j + 1];
+                cellModel.cellTitle = [NSString stringWithFormat:@"第%ld组,第%ld行",i + 1,j + 1];
                 [cellModels addObject:cellModel];
             }
             sectionModel.cellModels = cellModels;
