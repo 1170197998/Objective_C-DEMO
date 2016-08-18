@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  MultiLanguage
+//  KeyBoard
 //
-//  Created by ShaoFeng on 16/8/4.
+//  Created by ShaoFeng on 16/8/17.
 //  Copyright © 2016年 Cocav. All rights reserved.
 //
 
 #import "AppDelegate.h"
-//#import "LanguageManager.h"
+
 @interface AppDelegate ()
 
 @end
@@ -16,30 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-    NSArray* current = [[NSUserDefaults standardUserDefaults] objectForKey: @"AppleLanguages"];
-    NSArray *languages = [NSLocale preferredLanguages];
-    NSArray *localeIdentifiers = [NSLocale availableLocaleIdentifiers];
-    
-    
-    NSString *userLanguage = [[NSUserDefaults standardUserDefaults] valueForKey: @"userLanguage"];
-    if (!userLanguage) {
-        NSString* current = [[[NSUserDefaults standardUserDefaults] objectForKey: @"AppleLanguages"] objectAtIndex:0];
-        // 获得当前iPhone使用的语言
-        userLanguage = current;
-    }
-    
-    
-    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]) {
-        NSArray *languages = [NSLocale preferredLanguages];
-        NSString *language = [languages objectAtIndex:0];
-        if ([language hasPrefix:@"zh-Hans"]) {//开头匹配
-            [[NSUserDefaults standardUserDefaults] setObject:@"zh-Hans" forKey:@"appLanguage"];
-        } else {
-            [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];
-        }
-    }
-    
+    // Override point for customization after application launch.
     return YES;
 }
 

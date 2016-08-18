@@ -39,6 +39,19 @@
     //获取文件路径
     NSString *languagePath = [[NSBundle mainBundle] pathForResource:userLanguage ofType:@"lproj"];
     _languageBundle = [NSBundle bundleWithPath:languagePath];//生成bundle
+    
+    
+    if (![[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]) {
+        NSArray *languages = [NSLocale preferredLanguages];
+        NSString *language = [languages objectAtIndex:0];
+        if ([language hasPrefix:@"zh-Hans"]) {//开头匹配
+            [[NSUserDefaults standardUserDefaults] setObject:@"zh-Hans" forKey:@"appLanguage"];
+        } else {
+            [[NSUserDefaults standardUserDefaults] setObject:@"en" forKey:@"appLanguage"];
+        }
+    }
+    
+    
 }
 
 -(void)saveDefineUserLanguage:(NSString *)userLanguage
