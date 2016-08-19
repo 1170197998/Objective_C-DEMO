@@ -110,7 +110,12 @@
 
 - (void)emojiButtonView:(EmojiButtonView *)emojiButtonView text:(NSString *)text
 {
-    NSString *string = @"";
+    NSString *string;
+    if (self.textInput.text.length == 0) {
+        string = @"";
+    } else {
+        string = self.textInput.text;
+    }
     self.textInput.text = [string stringByAppendingString:text];
 }
 
