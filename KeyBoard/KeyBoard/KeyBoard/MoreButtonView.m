@@ -26,13 +26,13 @@
 
 - (void)layoutUI
 {
-    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeImages title:@"图片"];
-    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeCamera title:@"图片"];
-    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeFile title:@"图片"];
-    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeContact title:@"图片"];
-    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeLocation title:@"图片"];
-    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeSeal title:@"图片"];
-    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeEmail title:@"图片"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeImages title:@"Images"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeCamera title:@"Camera"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeFile title:@"File"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeContact title:@"Contact"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeLocation title:@"Location"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeSeal title:@"Seal"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeEmail title:@"Email"];
 }
 
 - (void)addButtonWithIcon:(NSString *)icon highIcon:(NSString *)heighIcon tag:(int )tag title:(NSString *)title
@@ -45,6 +45,7 @@
     [self addSubview:button];
     
     UILabel *label = [[UILabel alloc] init];
+    label.font = [UIFont systemFontOfSize:14];
     label.text = title;
     label.textAlignment = NSTextAlignmentCenter;
     [self addSubview:label];
@@ -64,7 +65,7 @@
         }
     }
     
-    CGFloat buttonW = 50;
+    CGFloat buttonW = 60;
     CGFloat buttonH = buttonW;
     for (NSInteger i = 0; i < mArrayButton.count; i ++) {
         UIButton *button = mArrayButton[i];
@@ -83,7 +84,6 @@
     if ([_delegate respondsToSelector:@selector(moreButtonView:didClickButton:)]) {
         [_delegate moreButtonView:self didClickButton:(MoreButtonViewButtonType)sender.tag];
     }
-    
 }
 
 @end

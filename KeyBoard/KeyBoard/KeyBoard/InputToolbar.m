@@ -69,6 +69,7 @@
     
     self.textInput = [[UITextView alloc] initWithFrame:CGRectMake(50, 9, SCREEN_WIDTH - 150, 30)];
     self.inputView.backgroundColor = [UIColor purpleColor];
+    self.textInput.font = [UIFont systemFontOfSize:16];
     self.textInput.layer.cornerRadius = 3;
     self.textInput.layer.masksToBounds = YES;
     self.textInput.returnKeyType = UIReturnKeySend;
@@ -117,6 +118,12 @@
         string = self.textInput.text;
     }
     self.textInput.text = [string stringByAppendingString:text];
+}
+
+- (void)emojiButtonView:(EmojiButtonView *)emojiButtonView sendButtonClick:(UIButton *)sender
+{
+    NSLog(@"%@",self.textInput.text);
+    self.textInput.text = nil;
 }
 
 - (void)clickLeftButton

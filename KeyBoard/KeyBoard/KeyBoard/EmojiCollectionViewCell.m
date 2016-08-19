@@ -26,7 +26,6 @@
 {
     self.button = [[UIButton alloc] initWithFrame:CGRectInset(self.contentView.bounds, 12, 5)];
 //    self.button.backgroundColor = [UIColor whiteColor];
-    //拦截button自带的点击
     self.button.userInteractionEnabled = false;
     [self.contentView addSubview:self.button];
 }

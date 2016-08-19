@@ -52,6 +52,7 @@
     
     self.sendButton = [[UIButton alloc] initWithFrame:CGRectMake(SCREEN_WIDTH / 5 * 4, 0, SCREEN_WIDTH / 5, 40)];
     [self.sendButton setTitle:@"发送" forState:UIControlStateNormal];
+    [self.sendButton addTarget:self action:@selector(clickSenderButton:) forControlEvents:UIControlEventTouchUpInside];
     [self.emojiFooterView addSubview:self.sendButton];
     
     self.emojiButotn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH / 5, 40)];
@@ -92,6 +93,13 @@
     
     if ([_delegate respondsToSelector:@selector(emojiButtonView:text:)]) {
         [_delegate emojiButtonView:self text:str];
+    }
+}
+
+- (void)clickSenderButton:(UIButton *)sender
+{
+    if ([_delegate respondsToSelector:@selector(emojiButtonView:sendButtonClick:)]) {
+        [_delegate emojiButtonView:self sendButtonClick:sender];
     }
 }
 

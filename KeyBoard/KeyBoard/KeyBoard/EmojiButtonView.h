@@ -10,6 +10,8 @@
 @class EmojiButtonView;
 @protocol EmojiButtonViewDelegate <NSObject>
 - (void)emojiButtonView:(EmojiButtonView *)emojiButtonView text:(NSString *)text;
+- (void)emojiButtonView:(EmojiButtonView *)emojiButtonView sendButtonClick:(UIButton *)sender;
+
 @end
 
 @interface EmojiButtonView : UIView
