@@ -26,28 +26,64 @@
 
 - (void)layoutUI
 {
-    CGFloat W = 50;
-    CGFloat H = 50;
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeImages title:@"图片"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeCamera title:@"图片"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeFile title:@"图片"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeContact title:@"图片"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeLocation title:@"图片"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeSeal title:@"图片"];
+    [self addButtonWithIcon:@"img_defaulthead_nor" highIcon:@"img_defaulthead_nor" tag:MoreButtonViewButtonTypeEmail title:@"图片"];
+}
+
+- (void)addButtonWithIcon:(NSString *)icon highIcon:(NSString *)heighIcon tag:(int )tag title:(NSString *)title
+{
+    UIButton *button = [[UIButton alloc] init];
+    button.tag = tag;
+    [button addTarget:self action:@selector(buttonClick:) forControlEvents:UIControlEventTouchUpInside];
+    [button setBackgroundImage:[UIImage imageNamed:icon] forState:UIControlStateNormal];
+    [button setBackgroundImage:[UIImage imageNamed:heighIcon] forState:UIControlStateNormal];
+    [self addSubview:button];
     
-    for (NSInteger i = 0; i < 7; i ++) {
-        
-        CGFloat X = (((SCREEN_WIDTH - (4 * W)) / 5) * ((i % 4) + 1)) + (W * (i % 4));
-        CGFloat Y = 20 + (i / 4) * (H + 35);
-        UIButton *scrollViewButton = [[UIButton alloc] initWithFrame:CGRectMake(X, Y, W, H)];
-        UILabel *title = [[UILabel alloc] initWithFrame:CGRectMake(scrollViewButton.frame.origin.x, CGRectGetMaxY(scrollViewButton.frame) + 3, scrollViewButton.frame.size.width, 20)];
-        title.text = @"图片";
-        title.textAlignment = NSTextAlignmentCenter;
-        [scrollViewButton setBackgroundImage:[UIImage imageNamed:@"img_defaulthead_nor"] forState:UIControlStateNormal];
-        scrollViewButton.tag = 10 + i;
-        [scrollViewButton addTarget:self action:@selector(clickButton:) forControlEvents:UIControlEventTouchUpInside];
-        [self addSubview:title];
-        [self addSubview:scrollViewButton];
+    UILabel *label = [[UILabel alloc] init];
+    label.text = title;
+    label.textAlignment = NSTextAlignmentCenter;
+    [self addSubview:label];
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    NSMutableArray *mArrayButton = [NSMutableArray array];
+    NSMutableArray *mArrayLabel = [NSMutableArray array];
+
+    for (UIView *view in self.subviews) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            [mArrayButton addObject:view];
+        } else if ([view isKindOfClass:[UILabel class]]) {
+            [mArrayLabel addObject:view];
+        }
+    }
+    
+    CGFloat buttonW = 50;
+    CGFloat buttonH = buttonW;
+    for (NSInteger i = 0; i < mArrayButton.count; i ++) {
+        UIButton *button = mArrayButton[i];
+        UILabel *label = [mArrayLabel objectAtIndex:i];
+        CGFloat X = (((SCREEN_WIDTH - (4 * buttonW)) / 5) * ((i % 4) + 1)) + (buttonW * (i % 4));
+        CGFloat Y = 20 + (i / 4) * (buttonH + 35);
+        button.frame = CGRectMake(X, Y, buttonW, buttonH);
+        label.frame = CGRectMake(button.frame.origin.x, CGRectGetMaxY(button.frame) + 3, button.frame.size.width, 20);
     }
 }
 
-- (void)clickButton:(UIButton *)sender
+- (void)buttonClick:(UIButton *)sender
 {
     NSLog(@"sender%@ ",sender);
+    
+    if ([_delegate respondsToSelector:@selector(moreButtonView:didClickButton:)]) {
+        [_delegate moreButtonView:self didClickButton:(MoreButtonViewButtonType)sender.tag];
+    }
+    
 }
 
 @end

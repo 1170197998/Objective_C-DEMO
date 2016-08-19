@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@class EmojiButtonView;
+@protocol EmojiButtonViewDelegate <NSObject>
+- (void)emojiButtonView:(EmojiButtonView *)emojiButtonView text:(NSString *)text;
+@end
 
 @interface EmojiButtonView : UIView
-
+@property(nonatomic,weak) id<EmojiButtonViewDelegate>delegate;
 @end

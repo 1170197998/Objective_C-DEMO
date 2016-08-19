@@ -16,6 +16,8 @@
 		9A3FCB8C1D6548BF0058D4A4 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3FCB8B1D6548BF0058D4A4 /* PushViewController.m */; };
 		9A3FCB9F1D6566380058D4A4 /* InputToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3FCB9C1D6566380058D4A4 /* InputToolbar.m */; };
 		9A3FCBA01D6566380058D4A4 /* MoreButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A3FCB9E1D6566380058D4A4 /* MoreButtonView.m */; };
+		9A69F3B01D66BA74009FF6C0 /* CollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A69F3AF1D66BA74009FF6C0 /* CollectionViewFlowLayout.m */; };
+		9A69F3B31D66D092009FF6C0 /* EmojiCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A69F3B21D66D092009FF6C0 /* EmojiCollectionViewCell.m */; };
 		9A702BA81D65A1FA00B40D65 /* img_defaulthead_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A702BA51D65A1FA00B40D65 /* img_defaulthead_nor.png */; };
 		9A702BA91D65A1FA00B40D65 /* img_defaulthead_nor@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A702BA61D65A1FA00B40D65 /* img_defaulthead_nor@2x.png */; };
 		9A702BAA1D65A1FA00B40D65 /* img_defaulthead_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A702BA71D65A1FA00B40D65 /* img_defaulthead_nor@3x.png */; };
@@ -40,6 +42,10 @@
 		9A3FCB9C1D6566380058D4A4 /* InputToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputToolbar.m; sourceTree = "<group>"; };
 		9A3FCB9D1D6566380058D4A4 /* MoreButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreButtonView.h; sourceTree = "<group>"; };
 		9A3FCB9E1D6566380058D4A4 /* MoreButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreButtonView.m; sourceTree = "<group>"; };
+		9A69F3AE1D66BA74009FF6C0 /* CollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		9A69F3AF1D66BA74009FF6C0 /* CollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		9A69F3B11D66D092009FF6C0 /* EmojiCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiCollectionViewCell.h; sourceTree = "<group>"; };
+		9A69F3B21D66D092009FF6C0 /* EmojiCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiCollectionViewCell.m; sourceTree = "<group>"; };
 		9A702BA51D65A1FA00B40D65 /* img_defaulthead_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = img_defaulthead_nor.png; path = Assets.xcassets/img_defaulthead_nor.imageset/img_defaulthead_nor.png; sourceTree = "<group>"; };
 		9A702BA61D65A1FA00B40D65 /* img_defaulthead_nor@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_defaulthead_nor@2x.png"; path = "Assets.xcassets/img_defaulthead_nor.imageset/img_defaulthead_nor@2x.png"; sourceTree = "<group>"; };
 		9A702BA71D65A1FA00B40D65 /* img_defaulthead_nor@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "img_defaulthead_nor@3x.png"; path = "Assets.xcassets/img_defaulthead_nor.imageset/img_defaulthead_nor@3x.png"; sourceTree = "<group>"; };
@@ -115,8 +121,12 @@
 				9A702BAC1D65A89700B40D65 /* LeftButtonView.m */,
 				9A702BAE1D65B4F100B40D65 /* EmojiButtonView.h */,
 				9A702BAF1D65B4F100B40D65 /* EmojiButtonView.m */,
+				9A69F3B11D66D092009FF6C0 /* EmojiCollectionViewCell.h */,
+				9A69F3B21D66D092009FF6C0 /* EmojiCollectionViewCell.m */,
 				9A3FCB9D1D6566380058D4A4 /* MoreButtonView.h */,
 				9A3FCB9E1D6566380058D4A4 /* MoreButtonView.m */,
+				9A69F3AE1D66BA74009FF6C0 /* CollectionViewFlowLayout.h */,
+				9A69F3AF1D66BA74009FF6C0 /* CollectionViewFlowLayout.m */,
 			);
 			path = KeyBoard;
 			sourceTree = "<group>";
@@ -195,12 +205,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A171F311D64796700D48B84 /* ViewController.m in Sources */,
+				9A69F3B31D66D092009FF6C0 /* EmojiCollectionViewCell.m in Sources */,
 				9A3FCBA01D6566380058D4A4 /* MoreButtonView.m in Sources */,
 				9A171F2E1D64796700D48B84 /* AppDelegate.m in Sources */,
 				9A3FCB8C1D6548BF0058D4A4 /* PushViewController.m in Sources */,
 				9A171F2B1D64796700D48B84 /* main.m in Sources */,
 				9A702BAD1D65A89700B40D65 /* LeftButtonView.m in Sources */,
 				9A3FCB9F1D6566380058D4A4 /* InputToolbar.m in Sources */,
+				9A69F3B01D66BA74009FF6C0 /* CollectionViewFlowLayout.m in Sources */,
 				9A702BB01D65B4F100B40D65 /* EmojiButtonView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
