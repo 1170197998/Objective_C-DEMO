@@ -51,7 +51,7 @@
         NSLog(@"zuo");
     } else if (recognizer.direction == UISwipeGestureRecognizerDirectionRight) {
         NSLog(@"you");
-    }UIGestureRecognizer
+    }
 }
 
 - (void)longpress:(UILongPressGestureRecognizer *)recognizer
