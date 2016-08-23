@@ -55,6 +55,7 @@
 		9AB006CA1D6C4BBD007A0EB5 /* LeftButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB006C11D6C4BBD007A0EB5 /* LeftButtonView.m */; };
 		9AB006CB1D6C4BBD007A0EB5 /* MoreButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB006C31D6C4BBD007A0EB5 /* MoreButtonView.m */; };
 		9AB006CC1D6C4BBD007A0EB5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AB006C51D6C4BBD007A0EB5 /* UIView+Extension.m */; };
+		9AB006CE1D6C530C007A0EB5 /* mianView.png in Resources */ = {isa = PBXBuildFile; fileRef = 9AB006CD1D6C530C007A0EB5 /* mianView.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,6 +119,7 @@
 		9AB006C31D6C4BBD007A0EB5 /* MoreButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreButtonView.m; sourceTree = "<group>"; };
 		9AB006C41D6C4BBD007A0EB5 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		9AB006C51D6C4BBD007A0EB5 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		9AB006CD1D6C530C007A0EB5 /* mianView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mianView.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		9AB006781D6C4932007A0EB5 /* KerboardResource */ = {
 			isa = PBXGroup;
 			children = (
+				9AB006CD1D6C530C007A0EB5 /* mianView.png */,
 				9AB006791D6C4932007A0EB5 /* chat_ic_delete_nor.png */,
 				9AB0067A1D6C4932007A0EB5 /* chat_ic_delete_press.png */,
 				9AB0067B1D6C4932007A0EB5 /* chat_ic_delete_press@2x.png */,
@@ -315,6 +318,7 @@
 				9AB006AE1D6C4932007A0EB5 /* liaotian_ic_jianpan_press.png in Resources */,
 				9AB0069E1D6C4932007A0EB5 /* img_defaulthead_nor@3x.png in Resources */,
 				9A171F361D64796800D48B84 /* Assets.xcassets in Resources */,
+				9AB006CE1D6C530C007A0EB5 /* mianView.png in Resources */,
 				9AB006B41D6C4932007A0EB5 /* liaotian_ic_yuyin_nor.png in Resources */,
 				9AB006A21D6C4932007A0EB5 /* liaotian_ic_biaoqing_press.png in Resources */,
 				9A171F341D64796800D48B84 /* Main.storyboard in Resources */,

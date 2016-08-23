@@ -42,7 +42,6 @@
         }
         
         for (NSInteger i = 0;i < _defaultEmoticons.count;i ++) {
-            NSLog(@"%@  %ld",_defaultEmoticons[i],_defaultEmoticons.count);
             if (i == 20 || i == 41 || i == 62 || i == 83) {
                 [_defaultEmoticons insertObject:deleteButtonId atIndex:i];
             }

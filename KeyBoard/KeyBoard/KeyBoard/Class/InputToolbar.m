@@ -116,6 +116,7 @@
     self.textInput.layer.cornerRadius = 3;
     self.textInput.layer.masksToBounds = YES;
     self.textInput.returnKeyType = UIReturnKeySend;
+    self.textInput.enablesReturnKeyAutomatically = YES;
     self.textInput.delegate = self;
     [self addSubview:self.textInput];
     
@@ -215,8 +216,13 @@
         self.showKeyboardButton = YES;
         self.textInput.inputView = self.emojiButtonView;
     } else {
-        self.showKeyboardButton = NO;
-        self.textInput.inputView = nil;
+        
+        if (self.textInput.inputView != self.emojiButtonView) {
+            self.textInput.inputView = self.emojiButtonView;
+        } else {
+            self.textInput.inputView = nil;
+            self.showKeyboardButton = NO;
+        }
     }
     [self.textInput endEditing:YES];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0008 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -234,7 +240,12 @@
     if (self.textInput.inputView == nil) {
         self.textInput.inputView = keyboard;
     } else {
-        self.textInput.inputView = nil;
+        //优先弹出非键盘keyboard
+        if (self.textInput.inputView != keyboard) {
+            self.textInput.inputView = keyboard;
+        } else {
+            self.textInput.inputView = nil;
+        }
     }
     [self.textInput endEditing:YES];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0008 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
