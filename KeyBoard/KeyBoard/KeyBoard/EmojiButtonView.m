@@ -91,8 +91,8 @@
     NSString *str = self.defaultEmoticons[indexPath.row];
     NSLog(@"%@",str);
     
-    if ([_delegate respondsToSelector:@selector(emojiButtonView:text:)]) {
-        [_delegate emojiButtonView:self text:str];
+    if ([_delegate respondsToSelector:@selector(emojiButtonView:emojiText:)]) {
+        [_delegate emojiButtonView:self emojiText:str];
     }
 }
 

@@ -20,13 +20,20 @@
     [super viewDidLoad];
     
     self.inputToolbar = [[InputToolbar alloc] init];
-    self.inputToolbar.moreButtonView.delegate = self;
+    self.inputToolbar.textViewMaxVisibleLine = 4;
+    self.inputToolbar.width = self.view.width;
+    self.inputToolbar.height = 49;
+    self.inputToolbar.y = self.view.height - self.inputToolbar.height;
+    [self.inputToolbar setMorebuttonViewDelegate:self];
+    self.inputToolbar.sendContent = ^(NSString *content){
+        NSLog(@"发射成功☀️:---%@",content);
+    };
     [self.view addSubview:self.inputToolbar];
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    [self.inputToolbar.textInput resignFirstResponder];
+    self.inputToolbar.isBecomeFirstResponder = NO;
 }
 
 - (void)moreButtonView:(MoreButtonView *)moreButtonView didClickButton:(MoreButtonViewButtonType)buttonType

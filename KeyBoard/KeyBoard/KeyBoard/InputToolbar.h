@@ -10,13 +10,19 @@
 #import "MoreButtonView.h"
 #import "LeftButtonView.h"
 #import "EmojiButtonView.h"
-@interface InputToolbar : UIView
-@property (nonatomic,strong)UIButton *leftButton;
-@property (nonatomic,strong)UITextView *textInput;
-@property (nonatomic,strong)UIButton *emojiButton;
-@property (nonatomic,strong)UIButton *moreButton;
+#import "UIView+Extension.h"
 
-@property (nonatomic,strong)LeftButtonView *leftButtonView;
-@property (nonatomic,strong)EmojiButtonView *emojiButtonView;
-@property (nonatomic,strong)MoreButtonView *moreButtonView;
+@interface InputToolbar : UIView
+
+@property (nonatomic,assign)BOOL isBecomeFirstResponder;
+@property (nonatomic,assign)NSInteger textViewMaxVisibleLine;
+/**
+ *  点击发送后要发送的文本
+ */
+@property (nonatomic,strong)void(^sendContent)(NSString *content);
+
+- (void)setMorebuttonViewDelegate:(id)delegate;
+
+
+
 @end

@@ -9,9 +9,8 @@
 #import <UIKit/UIKit.h>
 @class EmojiButtonView;
 @protocol EmojiButtonViewDelegate <NSObject>
-- (void)emojiButtonView:(EmojiButtonView *)emojiButtonView text:(NSString *)text;
+- (void)emojiButtonView:(EmojiButtonView *)emojiButtonView emojiText:(NSString *)text;
 - (void)emojiButtonView:(EmojiButtonView *)emojiButtonView sendButtonClick:(UIButton *)sender;
-
 @end
 
 @interface EmojiButtonView : UIView

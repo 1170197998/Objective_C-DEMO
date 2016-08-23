@@ -23,6 +23,7 @@
 		9A702BAA1D65A1FA00B40D65 /* img_defaulthead_nor@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A702BA71D65A1FA00B40D65 /* img_defaulthead_nor@3x.png */; };
 		9A702BAD1D65A89700B40D65 /* LeftButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A702BAC1D65A89700B40D65 /* LeftButtonView.m */; };
 		9A702BB01D65B4F100B40D65 /* EmojiButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A702BAF1D65B4F100B40D65 /* EmojiButtonView.m */; };
+		9ABE6A4A1D6BD93F005E2225 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 9ABE6A491D6BD93F005E2225 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,8 @@
 		9A702BAC1D65A89700B40D65 /* LeftButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftButtonView.m; sourceTree = "<group>"; };
 		9A702BAE1D65B4F100B40D65 /* EmojiButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmojiButtonView.h; sourceTree = "<group>"; };
 		9A702BAF1D65B4F100B40D65 /* EmojiButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmojiButtonView.m; sourceTree = "<group>"; };
+		9ABE6A481D6BD93F005E2225 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		9ABE6A491D6BD93F005E2225 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 		9A3FCB9A1D6566380058D4A4 /* KeyBoard */ = {
 			isa = PBXGroup;
 			children = (
+				9ABE6A481D6BD93F005E2225 /* UIView+Extension.h */,
+				9ABE6A491D6BD93F005E2225 /* UIView+Extension.m */,
 				9A3FCB9B1D6566380058D4A4 /* InputToolbar.h */,
 				9A3FCB9C1D6566380058D4A4 /* InputToolbar.m */,
 				9A702BAB1D65A89700B40D65 /* LeftButtonView.h */,
@@ -210,6 +215,7 @@
 				9A171F2E1D64796700D48B84 /* AppDelegate.m in Sources */,
 				9A3FCB8C1D6548BF0058D4A4 /* PushViewController.m in Sources */,
 				9A171F2B1D64796700D48B84 /* main.m in Sources */,
+				9ABE6A4A1D6BD93F005E2225 /* UIView+Extension.m in Sources */,
 				9A702BAD1D65A89700B40D65 /* LeftButtonView.m in Sources */,
 				9A3FCB9F1D6566380058D4A4 /* InputToolbar.m in Sources */,
 				9A69F3B01D66BA74009FF6C0 /* CollectionViewFlowLayout.m in Sources */,
@@ -327,6 +333,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeyBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KeyBoard/TiKeyboard/AmrAudio/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocav.KeyBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -338,6 +348,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = KeyBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KeyBoard/TiKeyboard/AmrAudio/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cocav.KeyBoard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
