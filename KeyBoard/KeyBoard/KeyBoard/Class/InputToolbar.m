@@ -17,6 +17,7 @@
 @property (nonatomic, assign)CGFloat textInputHeight;
 @property (nonatomic, assign)NSInteger TextInputMaxHeight;
 @property (nonatomic, assign)NSInteger keyboardHeight;
+@property (nonatomic, assign) BOOL showKeyboardButton;
 
 @property (nonatomic,strong)UIButton *leftButton;
 @property (nonatomic,strong)UITextView *textInput;
@@ -111,7 +112,6 @@
     [self addSubview:self.leftButton];
     
     self.textInput = [[UITextView alloc] initWithFrame:CGRectMake(50, 5, SCREEN_WIDTH - 150, 36)];
-    self.textInput.backgroundColor = [UIColor purpleColor];
     self.textInput.font = [UIFont systemFontOfSize:16];
     self.textInput.layer.cornerRadius = 3;
     self.textInput.layer.masksToBounds = YES;
@@ -120,21 +120,18 @@
     [self addSubview:self.textInput];
     
     self.emojiButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.textInput.frame) + 10, 9, 30, 30)];
-    [self.emojiButton setImage:[UIImage imageNamed:@"liaotian_ic_jianpan_nor"] forState:UIControlStateNormal];
+    [self.emojiButton setImage:[UIImage imageNamed:@"liaotian_ic_biaoqing_nor"] forState:UIControlStateNormal];
     [self.emojiButton setImage:[UIImage imageNamed:@"liaotian_ic_biaoqing_press"] forState:UIControlStateHighlighted];
     [self.emojiButton addTarget:self action:@selector(clickEmojiButton) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.emojiButton];
     
     self.moreButton = [[UIButton alloc] initWithFrame:CGRectMake(CGRectGetMaxX(self.emojiButton.frame) + 10, 9, 30, 30)];
-    [self.moreButton setImage:[UIImage imageNamed:@"liaotian_ic_gengduo_press"] forState:UIControlStateNormal];
+    [self.moreButton setImage:[UIImage imageNamed:@"liaotian_ic_gengduo_nor"] forState:UIControlStateNormal];
     [self.moreButton setImage:[UIImage imageNamed:@"liaotian_ic_gengduo_press"] forState:UIControlStateHighlighted];
     [self.moreButton addTarget:self action:@selector(clickMoreButton) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:self.moreButton];
 }
 
-/**
- *  输入文字调用
- */
 - (void)textViewDidChange:(UITextView *)textView
 {
     _textInputHeight = ceilf([self.textInput sizeThatFits:CGSizeMake(self.textInput.bounds.size.width, MAXFLOAT)].height);
@@ -151,11 +148,13 @@
     self.leftButton.y = self.emojiButton.y = self.moreButton.y = self.height - self.leftButton.height - 12;
 }
 
-/**
- *  输入emoji调用
- */
 - (void)emojiButtonView:(EmojiButtonView *)emojiButtonView emojiText:(NSString *)text
 {
+    if ([text  isEqual: deleteButtonId]) {
+        [self.textInput deleteBackward];
+        return;
+    }
+    
     NSString *string;
     if (self.textInput.text.length == 0) {
         string = @"";
@@ -212,7 +211,17 @@
 
 - (void)clickEmojiButton
 {
-    [self switchToKeyboard:self.emojiButtonView];
+    if (self.textInput.inputView == nil) {
+        self.showKeyboardButton = YES;
+        self.textInput.inputView = self.emojiButtonView;
+    } else {
+        self.showKeyboardButton = NO;
+        self.textInput.inputView = nil;
+    }
+    [self.textInput endEditing:YES];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0008 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.textInput becomeFirstResponder];
+    });
 }
 
 - (void)clickMoreButton
@@ -231,6 +240,25 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.0008 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [self.textInput becomeFirstResponder];
     });
+}
+
+- (void)setShowKeyboardButton:(BOOL)showKeyboardButton
+{
+    _showKeyboardButton = showKeyboardButton;
+    
+    // 默认的图片名
+    NSString *image = @"liaotian_ic_biaoqing_nor";
+    NSString *highImage = @"liaotian_ic_biaoqing_press";
+    
+    // 显示键盘图标
+    if (showKeyboardButton) {
+        image = @"liaotian_ic_jianpan_nor";
+        highImage = @"liaotian_ic_jianpan_press";
+    }
+    
+    // 设置图片
+    [self.emojiButton setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
+    [self.emojiButton setImage:[UIImage imageNamed:highImage] forState:UIControlStateHighlighted];
 }
 
 - (void)setIsBecomeFirstResponder:(BOOL)isBecomeFirstResponder

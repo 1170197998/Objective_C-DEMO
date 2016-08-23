@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "EmojiCollectionViewCell.h"
 @class EmojiButtonView;
 @protocol EmojiButtonViewDelegate <NSObject>
 - (void)emojiButtonView:(EmojiButtonView *)emojiButtonView emojiText:(NSString *)text;

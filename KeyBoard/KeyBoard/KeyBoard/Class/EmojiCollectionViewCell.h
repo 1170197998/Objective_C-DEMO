@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+static NSString *const deleteButtonId = @"DeleteButtonId";
 @interface EmojiCollectionViewCell : UICollectionViewCell
 @property (nonatomic,strong)NSString *string;
 @end
