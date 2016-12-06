@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  HeaderZoom
+//  JSPatchDemo
 //
-//  Created by ShaoFeng on 16/8/3.
-//  Copyright © 2016年 Cocav. All rights reserved.
+//  Created by ShaoFeng on 2016/12/6.
+//  Copyright © 2016年 ShaoFeng. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

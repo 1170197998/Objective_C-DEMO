@@ -18,6 +18,8 @@
 		9A35FBC51CB7BA7600D3F2AC /* SFButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A35FBC01CB7BA7600D3F2AC /* SFButtonItem.m */; };
 		9A35FBC61CB7BA7600D3F2AC /* UIActionSheet+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A35FBC21CB7BA7600D3F2AC /* UIActionSheet+Blocks.m */; };
 		9A35FBC71CB7BA7600D3F2AC /* UIAlertView+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A35FBC41CB7BA7600D3F2AC /* UIAlertView+Blocks.m */; };
+		9A6CF8311DF53D7700598CE0 /* UIAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CF8301DF53D7700598CE0 /* UIAlertViewController.m */; };
+		9A6CF8341DF5405F00598CE0 /* UIAlertController+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A6CF8331DF5405F00598CE0 /* UIAlertController+Blocks.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		9A35FBC21CB7BA7600D3F2AC /* UIActionSheet+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Blocks.m"; sourceTree = "<group>"; };
 		9A35FBC31CB7BA7600D3F2AC /* UIAlertView+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Blocks.h"; sourceTree = "<group>"; };
 		9A35FBC41CB7BA7600D3F2AC /* UIAlertView+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Blocks.m"; sourceTree = "<group>"; };
+		9A6CF82F1DF53D7700598CE0 /* UIAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIAlertViewController.h; sourceTree = "<group>"; };
+		9A6CF8301DF53D7700598CE0 /* UIAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIAlertViewController.m; sourceTree = "<group>"; };
+		9A6CF8321DF5405F00598CE0 /* UIAlertController+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Blocks.h"; sourceTree = "<group>"; };
+		9A6CF8331DF5405F00598CE0 /* UIAlertController+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Blocks.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +167,10 @@
 				9A35FBC21CB7BA7600D3F2AC /* UIActionSheet+Blocks.m */,
 				9A35FBC31CB7BA7600D3F2AC /* UIAlertView+Blocks.h */,
 				9A35FBC41CB7BA7600D3F2AC /* UIAlertView+Blocks.m */,
+				9A6CF8321DF5405F00598CE0 /* UIAlertController+Blocks.h */,
+				9A6CF8331DF5405F00598CE0 /* UIAlertController+Blocks.m */,
+				9A6CF82F1DF53D7700598CE0 /* UIAlertViewController.h */,
+				9A6CF8301DF53D7700598CE0 /* UIAlertViewController.m */,
 			);
 			path = AlertView_Block;
 			sourceTree = "<group>";
@@ -295,6 +305,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A6CF8341DF5405F00598CE0 /* UIAlertController+Blocks.m in Sources */,
+				9A6CF8311DF53D7700598CE0 /* UIAlertViewController.m in Sources */,
 				9A35FB741CB7B9EF00D3F2AC /* ViewController.m in Sources */,
 				9A35FBC51CB7BA7600D3F2AC /* SFButtonItem.m in Sources */,
 				9A35FB711CB7B9EF00D3F2AC /* AppDelegate.m in Sources */,
@@ -526,6 +538,7 @@
 				9A35FB981CB7B9EF00D3F2AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A35FB991CB7B9EF00D3F2AC /* Build configuration list for PBXNativeTarget "iOS7_iOS9_AlertAndSheetTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +547,7 @@
 				9A35FB9B1CB7B9EF00D3F2AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A35FB9C1CB7B9EF00D3F2AC /* Build configuration list for PBXNativeTarget "iOS7_iOS9_AlertAndSheetUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +556,7 @@
 				9A35FB9E1CB7B9EF00D3F2AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
