@@ -25,8 +25,8 @@
 
 # 
 
-##FoldTableView,类似QQ课折叠可展开的效果
-##![效果图](http://g.recordit.co/MJhL9Lv71j.gif)
+##FoldTableView,类似QQ可折叠可展开的效果
+##![效果图](http://g.recordit.co/u4qHqoRQRR.gif)
 
 
 # 
