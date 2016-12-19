@@ -4,7 +4,7 @@
 //
 //  Created by ShaoFeng on 2016/10/12.
 //  Copyright © 2016年 ShaoFeng. All rights reserved.
-//  参考:http://www.cnblogs.com/kenshincui/p/4186022.html#video
+//  http://www.cnblogs.com/kenshincui/p/4186022.html#video
 
 #import "ViewController.h"
 #import <MediaPlayer/MediaPlayer.h>

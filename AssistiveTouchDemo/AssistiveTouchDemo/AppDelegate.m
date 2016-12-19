@@ -20,7 +20,7 @@
 
 -(void)setNew
 {
-    _Win = [[AssistiveTouch alloc] initWithFrame:CGRectMake(0, 0, 60, 60)];
+    _Win = [[AssistiveTouch alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
 }
 
 

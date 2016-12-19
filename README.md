@@ -1,3 +1,5 @@
+#博客地址:http://blog.csdn.net/feng2qing
+---
 #DEMO截图,会一直更新...
 ##SFTextField:
 ##![Mou icon](http://g.recordit.co/G9tZ942Z3Z.gif)
@@ -27,6 +29,28 @@
 ##![效果图](http://g.recordit.co/MJhL9Lv71j.gif)
 
 
-##博客地址:http://blog.csdn.net/feng2qing
+# 
+
+##ProgressBar,自绘进度条
+##![效果图](http://g.recordit.co/WxEr0TNu8d.gif)
+
+# 
+
+##AssistiveTouchDemo,iPhone AssisTiveTouch
+##![效果图](http://g.recordit.co/4BdzxEi5lh.gif)
 
 
+# 
+
+##自带视频播放器,自带视频播放器
+##![效果图](http://g.recordit.co/9R2Aiv7iid.gif)
+
+# 
+
+##MultiLanguage,iPhone多语言
+##![效果图](http://g.recordit.co/wqjC90zKCI.gif)
+
+# 
+
+##AudioDemo,iOS开发音频录制与播放,自制录制效果(非图片)
+##![效果图](http://g.recordit.co/HL36vWu3ID.gif)
