@@ -1,0 +1,15 @@
+//
+//  ViewController.h
+//  AudioDemo
+//
+//  Created by ShaoFeng on 2016/12/19.
+//  Copyright © 2016年 ShaoFeng. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface ViewController : UIViewController
+
+
+@end
+
