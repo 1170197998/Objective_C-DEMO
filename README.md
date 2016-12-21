@@ -10,10 +10,6 @@
 ##![Mou icon](http://g.recordit.co/BlBxvnRKN1.gif)
 
 # 
-##iOS7_iOS9_AlertAndSheet:兼容iOS7的AlertController
-##![Mou icon](http://g.recordit.co/rD56NBpZsI.gif)
-
-# 
 
 ##仿头条新闻滑动效果
 ##![效果图](http://g.recordit.co/atDBaJBUmQ.gif)
