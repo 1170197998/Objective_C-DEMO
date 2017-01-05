@@ -48,5 +48,5 @@
 
 # 
 
-##AudioDemo,iOS开发音频录制与播放,自制录制效果(非图片)
+##AudioDemo,iOS开发音频录制与播放,自制录制效果(非图片,比图片效率高)
 ##![效果图](http://g.recordit.co/HL36vWu3ID.gif)
