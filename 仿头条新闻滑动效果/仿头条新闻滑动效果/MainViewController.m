@@ -66,9 +66,8 @@
         [topButton setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
         [topButton setTitle:_mArrayTitle[i] forState:UIControlStateNormal];
         [_mArrayTopButton addObject:topButton];
-        [_topScrollView addSubview:topButton
-         ];
-        topButton.tag = 6000 + i;
+        [_topScrollView addSubview:topButton];
+        topButton.tag = 10 + i;
         [topButton addTarget:self action:@selector(clickTopButton:) forControlEvents:UIControlEventTouchUpInside];
     }
     ((UIButton *)_mArrayTopButton[1]).selected = YES;
@@ -94,18 +93,17 @@
     sender.selected = YES;
     
     [UIView animateWithDuration:0.5 animations:^{
-        [_mainScrollView setContentOffset:CGPointMake((sender.tag - 6000) * SCR_W, 0)];
+        [_mainScrollView setContentOffset:CGPointMake((sender.tag - 10) * SCR_W, 0)];
     }];
     
     //点击按钮的时候,topScrollView移动
     [SFPackageViewController setMoveScrollViewContentOffsetWithCurrentClickView:sender andMoveScrollView:_topScrollView];
-    NSLog(@"_topScrollView.contentSize---%@",NSStringFromCGSize(_topScrollView.contentSize));
-    NSLog(@"_topScrollView.contentOffset---%@",NSStringFromCGPoint(_topScrollView.contentOffset));
-    NSLog(@"_topScrollView.frame---%@",NSStringFromCGRect(_topScrollView.frame));
-    NSLog(@"_topScrollView.bounds---%@",NSStringFromCGRect(_topScrollView.bounds));
-    NSLog(@"_topScrollView.contentInset---%@ \n \n",NSStringFromUIEdgeInsets(_topScrollView.contentInset));
+//    NSLog(@"_topScrollView.contentSize---%@",NSStringFromCGSize(_topScrollView.contentSize));
+//    NSLog(@"_topScrollView.contentOffset---%@",NSStringFromCGPoint(_topScrollView.contentOffset));
+//    NSLog(@"_topScrollView.frame---%@",NSStringFromCGRect(_topScrollView.frame));
+//    NSLog(@"_topScrollView.bounds---%@",NSStringFromCGRect(_topScrollView.bounds));
+//    NSLog(@"_topScrollView.contentInset---%@ \n \n",NSStringFromUIEdgeInsets(_topScrollView.contentInset));
 }
-
 
 - (void)setMainScrollView
 {
@@ -118,18 +116,18 @@
     _mArrayWithViewController = [NSMutableArray arrayWithObjects:firstVC,secondVC,thirdVC,fourthVC,fifthVC,sixVC, nil];
     
     _mainScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, SCR_W, SCR_H)];
-    [_mainScrollView setContentSize:CGSizeMake(SCR_W * _mArrayWithViewController.count, SCR_H)];
+    [_mainScrollView setContentSize:CGSizeMake(SCR_W * _mArrayWithViewController.count, SCR_H - 64)];
     _mainScrollView.bounces = NO;
     _mainScrollView.delegate = self;
     _mainScrollView.pagingEnabled = YES;
     _mainScrollView.showsHorizontalScrollIndicator = NO;
-    _mainScrollView.showsVerticalScrollIndicator = NO;
+    _mainScrollView.showsVerticalScrollIndicator = YES;
     
     [_mainScrollView setContentOffset:CGPointMake(SCR_W, 0)];
     
     NSInteger i = 0;
     for (UIViewController *viewController in _mArrayWithViewController) {
-        viewController.view.frame = CGRectMake(i * SCR_W, 0, SCR_W, _mainScrollView.frame.size.height);
+        viewController.view.frame = CGRectMake(i * SCR_W, 0, SCR_W, SCR_H);
         [_mainScrollView addSubview:viewController.view];
         i ++;
     }
