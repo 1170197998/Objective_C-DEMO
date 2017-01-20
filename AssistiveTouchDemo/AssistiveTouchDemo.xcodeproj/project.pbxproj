@@ -14,7 +14,6 @@
 		9A75C9AE1DD1BA5A00D29594 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A75C9A81DD1BA5A00D29594 /* ViewController.m */; };
 		9A75C9BA1DD1BAF300D29594 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A75C9B61DD1BAF300D29594 /* LaunchScreen.storyboard */; };
 		9A75C9BB1DD1BAF300D29594 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A75C9B81DD1BAF300D29594 /* Main.storyboard */; };
-		9A75C9BD1DD1BB0700D29594 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A75C9BC1DD1BB0700D29594 /* Default-568h@2x.png */; };
 		9A75C9BF1DD1BB7700D29594 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9A75C9BE1DD1BB7700D29594 /* Info.plist */; };
 /* End PBXBuildFile section */
 
@@ -30,7 +29,6 @@
 		9A75C9A81DD1BA5A00D29594 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = AssistiveTouchDemo/ViewController.m; sourceTree = SOURCE_ROOT; };
 		9A75C9B71DD1BAF300D29594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AssistiveTouchDemo/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		9A75C9B91DD1BAF300D29594 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AssistiveTouchDemo/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
-		9A75C9BC1DD1BB0700D29594 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9A75C9BE1DD1BB7700D29594 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = AssistiveTouchDemo/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -48,7 +46,6 @@
 		9A75C97A1DD1B14200D29594 = {
 			isa = PBXGroup;
 			children = (
-				9A75C9BC1DD1BB0700D29594 /* Default-568h@2x.png */,
 				9A75C9851DD1B14200D29594 /* AssistiveTouchDemo */,
 				9A75C9841DD1B14200D29594 /* Products */,
 			);
@@ -149,7 +146,6 @@
 			files = (
 				9A75C9BA1DD1BAF300D29594 /* LaunchScreen.storyboard in Resources */,
 				9A75C9AA1DD1BA5A00D29594 /* Assets.xcassets in Resources */,
-				9A75C9BD1DD1BB0700D29594 /* Default-568h@2x.png in Resources */,
 				9A75C9BF1DD1BB7700D29594 /* Info.plist in Resources */,
 				9A75C9BB1DD1BAF300D29594 /* Main.storyboard in Resources */,
 			);

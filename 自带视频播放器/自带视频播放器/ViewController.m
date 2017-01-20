@@ -4,16 +4,13 @@
 //
 //  Created by ShaoFeng on 2016/10/12.
 //  Copyright © 2016年 ShaoFeng. All rights reserved.
-//  http://www.cnblogs.com/kenshincui/p/4186022.html#video
 
 #import "ViewController.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 @interface ViewController ()
-
 //播放器视图控制器
 @property (nonatomic,strong) MPMoviePlayerViewController *moviePlayerViewController;
-
 @end
 
 @implementation ViewController
@@ -21,7 +18,6 @@
 #pragma mark - 控制器视图方法
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
 }
 
 -(void)dealloc{
@@ -78,7 +74,6 @@
     NSNotificationCenter *notificationCenter=[NSNotificationCenter defaultCenter];
     [notificationCenter addObserver:self selector:@selector(mediaPlayerPlaybackStateChange:) name:MPMoviePlayerPlaybackStateDidChangeNotification object:self.moviePlayerViewController.moviePlayer];
     [notificationCenter addObserver:self selector:@selector(mediaPlayerPlaybackFinished:) name:MPMoviePlayerPlaybackDidFinishNotification object:self.moviePlayerViewController.moviePlayer];
-    
 }
 
 /**
