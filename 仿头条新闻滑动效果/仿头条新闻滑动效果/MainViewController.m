@@ -7,13 +7,8 @@
 //
 //   http://blog.csdn.net/feng2qing?viewmode=list
 
-//get the width of the screen
 #define SCR_W [UIScreen mainScreen].bounds.size.width
-
-//get the width of the screen
 #define SCR_H [UIScreen mainScreen].bounds.size.height
-
-//custom RGB color
 #define RGB(__r,__g,__b) [UIColor colorWithRed:(__r) / 255.0 green:(__g) / 255.0 blue:(__b) / 255.0 alpha:1]
 
 #define topButtonWidth 100
