@@ -25,7 +25,6 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
-
 #pragma mark - 私有方法
 /**
  *  取得本地文件路径
