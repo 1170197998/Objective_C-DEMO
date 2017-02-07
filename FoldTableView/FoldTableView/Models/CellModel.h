@@ -9,7 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface CellModel : NSObject
-
 @property (nonatomic,copy)NSString *cellTitle;
-
 @end

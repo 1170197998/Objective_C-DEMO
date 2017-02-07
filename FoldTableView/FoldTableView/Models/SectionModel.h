@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface SectionModel : NSObject
-
 @property (nonatomic,copy)NSString *sectionTitle;
 @property (nonatomic,strong)NSMutableArray *cellModels;
 @property (nonatomic,assign)BOOL isExpanded;
-
 @end

@@ -12,8 +12,6 @@
 typedef void (^HeaderViewClickCallBack)(BOOL isExpanded);
 
 @interface HeaderView : UITableViewHeaderFooterView
-
 @property (nonatomic,strong)SectionModel *sectionModel;
 @property (nonatomic,copy)HeaderViewClickCallBack expandCallBack;
-
 @end
