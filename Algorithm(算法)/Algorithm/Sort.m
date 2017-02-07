@@ -126,4 +126,38 @@
     }
 }
 
+//堆排序(目前不支持负数)
+- (void)heapSort:(NSMutableArray *)mArray isAsc:(BOOL)isAsc
+{
+    for (NSInteger i = mArray.count / 2 - 1; i >= 0; -- i) {
+        [self siftWithLow:i high:mArray.count asc:isAsc array:mArray];
+    }
+    for (NSInteger i = mArray.count - 1; i >= 1; -- i) {
+        id temp = mArray[0];
+        mArray[0] = mArray[i];
+        mArray[i] = temp;
+        [self siftWithLow:0 high:i asc:isAsc array:mArray];
+    }
+}
+
+- (void)siftWithLow:(NSInteger)low high:(NSInteger)high asc:(BOOL)isAsc array:(NSMutableArray *)mArray
+{
+    NSInteger left = 2 * low + 1;
+    NSInteger right = left + 1;
+    NSInteger lastIndex = low;
+    //左子节点大的情况
+    if (left < high && ((mArray[left] > mArray[lastIndex] && isAsc) || (mArray[left] < mArray[lastIndex] && !isAsc))) lastIndex = left;
+    //右子节点大的情况
+    if (right < high && ((mArray[right] > mArray[lastIndex] && isAsc) || (mArray[right] < mArray[lastIndex] && !isAsc))) lastIndex = right;
+    //节点改变
+    if (lastIndex != low) {
+        //较大的节点值将交换到其所在节点的父节点
+        id temp = mArray[low];
+        mArray[low] = mArray[lastIndex];
+        mArray[lastIndex] = temp;
+        //递归遍历
+        [self siftWithLow:lastIndex high:high asc:isAsc array:mArray];
+    }
+}
+
 @end

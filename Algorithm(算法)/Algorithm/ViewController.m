@@ -36,10 +36,13 @@
     //[sort insertSort:mArray];
     
     //二分插入排序
-    [sort binaryInsertSort:mArray];
+    //[sort binaryInsertSort:mArray];
     
     //希尔排序
     //[sort shellSort:mArray];
+    
+    //堆排序
+    [sort heapSort:mArray isAsc:YES];
     NSLog(@"排序后:%@",mArray);
 }
 

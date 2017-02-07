@@ -44,4 +44,9 @@
  */
 -(void)shellSort:(NSMutableArray *)mArray;
 
+/*
+ 堆排序
+ */
+- (void)heapSort:(NSMutableArray *)mArray isAsc:(BOOL)isAsc;
+
 @end
