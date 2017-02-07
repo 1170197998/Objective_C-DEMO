@@ -16,8 +16,6 @@
 
 @implementation JumpViewController
 
-
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
