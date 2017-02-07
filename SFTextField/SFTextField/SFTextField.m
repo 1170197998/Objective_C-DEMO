@@ -9,9 +9,9 @@
 #import "SFTextField.h"
 
 @interface SFTextField ()
-@property (nonatomic, copy) NSString *password;
-@property (nonatomic, weak) id beginEditingObserver;
-@property (nonatomic, weak) id endEditingObserver;
+@property (nonatomic,copy) NSString *password;
+@property (nonatomic,weak) id beginEditingObserver;
+@property (nonatomic,weak) id endEditingObserver;
 @end
 
 @implementation SFTextField
