@@ -38,7 +38,7 @@
     NSLog(@"click");
 }
 
-//手势事件 －－ 改变位置
+///手势事件 －－ 改变位置
 -(void)changePostion:(UIPanGestureRecognizer *)pan
 {
     CGPoint point = [pan translationInView:self];

@@ -23,7 +23,6 @@
     _Win = [[AssistiveTouch alloc] initWithFrame:CGRectMake(0, 0, 40, 40)];
 }
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
