@@ -29,7 +29,6 @@
         userLanguage = current;
     }
     
-    
     if (![[NSUserDefaults standardUserDefaults] objectForKey:@"appLanguage"]) {
         NSArray *languages = [NSLocale preferredLanguages];
         NSString *language = [languages objectAtIndex:0];

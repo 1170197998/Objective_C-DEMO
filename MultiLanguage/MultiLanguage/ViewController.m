@@ -12,7 +12,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *test1;
 @property (strong, nonatomic) IBOutlet UIButton *test2;
 @property (strong, nonatomic) IBOutlet UIButton *operatorButton;
-
 @end
 
 @implementation ViewController
