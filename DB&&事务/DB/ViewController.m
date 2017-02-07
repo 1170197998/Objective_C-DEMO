@@ -55,14 +55,14 @@
     }];
     
     
-//    [_queue inDatabase:^(FMDatabase *db) {
-//        BOOL flag = [db executeUpdate:@"INSERT INTO T_USER (name,age) VALUES (?,?)",@"少锋",@18];
-//        if (flag) {
-//            NSLog(@"数据添加成功");
-//        } else {
-//            NSLog(@"数据添加失败");
-//        }
-//    }];
+    //    [_queue inDatabase:^(FMDatabase *db) {
+    //        BOOL flag = [db executeUpdate:@"INSERT INTO T_USER (name,age) VALUES (?,?)",@"少锋",@18];
+    //        if (flag) {
+    //            NSLog(@"数据添加成功");
+    //        } else {
+    //            NSLog(@"数据添加失败");
+    //        }
+    //    }];
 }
 
 //为数据表删除数据,表任然存在
@@ -86,32 +86,31 @@
         
         @try {
             flag = [db executeUpdate:@"UPDATE T_USER SET age = ?",@20];
-
+            
         } @catch (NSException *exception) {
             *rollback = YES;
             flag = NO;
-
+            
         } @finally {
             *rollback=!flag;
         }
     }];
     
-    
-//    [_queue inDatabase:^(FMDatabase *db) {
-//        
-//        //开启事务
-//        [db beginTransaction];
-//        BOOL flag = [db executeUpdate:@"UPDATE T_USER SET age = ?",@20];
-//        if (flag) {
-//            NSLog(@"数据更新成功");
-//        } else {
-//            NSLog(@"数据更新失败");
-//            //事务回滚
-//            [db rollback];
-//        }
-//        //提交事务
-//        [db commit];
-//    }];
+    //    [_queue inDatabase:^(FMDatabase *db) {
+    //
+    //        //开启事务
+    //        [db beginTransaction];
+    //        BOOL flag = [db executeUpdate:@"UPDATE T_USER SET age = ?",@20];
+    //        if (flag) {
+    //            NSLog(@"数据更新成功");
+    //        } else {
+    //            NSLog(@"数据更新失败");
+    //            //事务回滚
+    //            [db rollback];
+    //        }
+    //        //提交事务
+    //        [db commit];
+    //    }];
 }
 
 //查询数据表数据
