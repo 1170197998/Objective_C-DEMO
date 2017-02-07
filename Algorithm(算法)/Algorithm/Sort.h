@@ -19,30 +19,25 @@
  */
 - (void)quickSort:(NSMutableArray *)mArray leftIndex:(int )left rightIndex:(int )right;
 
-
 /**
  冒泡排序
  */
 - (void)bubbleSort:(NSMutableArray *)mArray;
-
 
 /**
  选择排序
  */
 - (void)selectSort:(NSMutableArray *)mArray;
 
-
 /**
  直接插入排序
  */
 - (void)insertSort:(NSMutableArray *)mArray;
 
-
 /**
  二分插入排序
  */
 -(void)binaryInsertSort:(NSMutableArray *)mArray;
-
 
 /**
  希尔排序

@@ -19,7 +19,6 @@
     
     Sort *sort = [[Sort alloc] init];
     
-//    NSMutableArray *mArray = [NSMutableArray arrayWithObjects:@6,@5,@8,@1,@9,@8, nil];
     NSMutableArray *mArray = [NSMutableArray arrayWithObjects:@6,@5,@8,@1,@9,@8,@45,@89,@97,@156,@789,@-5,@84,@262,@-658,@256,@963, nil];
     
     NSLog(@"排序前:%@",mArray);
@@ -43,7 +42,5 @@
     //[sort shellSort:mArray];
     NSLog(@"排序后:%@",mArray);
 }
-
-
 
 @end
