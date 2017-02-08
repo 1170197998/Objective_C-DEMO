@@ -1,0 +1,99 @@
+/*
+1. HKQuantityTypeIdentifierBodyMassIndex  身高体重指数
+2. HKQuantityTypeIdentifierBodyFatPercentage 体脂率
+3. HKQuantityTypeIdentifierHeight 身高
+4. HKQuantityTypeIdentifierBodyMass 体重
+5. HKQuantityTypeIdentifierLeanBodyMass 去脂体重
+
+1. HKQuantityTypeIdentifierStepCount  步数
+2. HKQuantityTypeIdentifierDistanceWalkingRunning 步行+跑步距离
+3. HKQuantityTypeIdentifierDistanceCycling 骑车距离
+4. HKQuantityTypeIdentifierBasalEnergyBurned 静息能量
+5. HKQuantityTypeIdentifierActiveEnergyBurned 活动能量
+6. HKQuantityTypeIdentifierFlightsClimbed 已爬楼层
+
+//不允许share
+7. HKQuantityTypeIdentifierNikeFuel NikeFuel
+8. HKQuantityTypeIdentifierAppleExerciseTime  锻炼分钟数健身数据
+
+1. HKQuantityTypeIdentifierHeartRate 心率
+2. HKQuantityTypeIdentifierBodyTemperature  体温
+3. HKQuantityTypeIdentifierBasalBodyTemperature 基础体温
+4. HKQuantityTypeIdentifierBloodPressureSystolic  收缩压
+5. HKQuantityTypeIdentifierBloodPressureDiastolic  舒张压
+6. HKQuantityTypeIdentifierRespiratoryRate  呼吸速率
+
+1. HKQuantityTypeIdentifierOxygenSaturation  血氧饱和度
+2. HKQuantityTypeIdentifierPeripheralPerfusionIndex 末梢灌注指数
+3. HKQuantityTypeIdentifierBloodGlucose 血糖
+4. HKQuantityTypeIdentifierNumberOfTimesFallen 摔倒次数
+5. HKQuantityTypeIdentifierElectrodermalActivity  皮电活动
+6. HKQuantityTypeIdentifierInhalerUsage 吸入剂用量
+7. HKQuantityTypeIdentifierBloodAlcoholContent  血液酒精浓度
+8. HKQuantityTypeIdentifierForcedVitalCapacity  最大肺活量|用力肺活量
+9. HKQuantityTypeIdentifierForcedExpiratoryVolume1 第一秒用力呼气量
+10.HKQuantityTypeIdentifierPeakExpiratoryFlowRate 呼气流量峰值
+
+1. HKQuantityTypeIdentifierDietaryFatTotal 总脂肪
+2. HKQuantityTypeIdentifierDietaryFatPolyunsaturated  多元不饱和脂肪
+3. HKQuantityTypeIdentifierDietaryFatMonounsaturated 单元不饱和脂肪
+4. HKQuantityTypeIdentifierDietaryFatSaturated 饱和脂肪
+5. HKQuantityTypeIdentifierDietaryCholesterol 膳食胆固醇
+6. HKQuantityTypeIdentifierDietarySodium 钠
+7. HKQuantityTypeIdentifierDietaryCarbohydrates 碳水化合物
+8. HKQuantityTypeIdentifierDietaryFiber 纤维
+9. HKQuantityTypeIdentifierDietarySugar 膳食糖
+10.HKQuantityTypeIdentifierDietaryEnergyConsumed  膳食能量
+11.HKQuantityTypeIdentifierDietaryProtein 蛋白质
+12.HKQuantityTypeIdentifierDietaryVitaminA 维生素 A
+13.HKQuantityTypeIdentifierDietaryVitaminB6 维生素 B6
+14.HKQuantityTypeIdentifierDietaryVitaminB12 维生素 B12
+15.HKQuantityTypeIdentifierDietaryVitaminC 维生素 C
+16.HKQuantityTypeIdentifierDietaryVitaminD 维生素 D
+17.HKQuantityTypeIdentifierDietaryVitaminE 维生素 E
+18.HKQuantityTypeIdentifierDietaryVitaminK 维生素 K
+19.HKQuantityTypeIdentifierDietaryCalcium  钙
+20.HKQuantityTypeIdentifierDietaryIron 铁
+21.HKQuantityTypeIdentifierDietaryThiamin 硫铵
+22.HKQuantityTypeIdentifierDietaryRiboflavin 核黄素
+23.HKQuantityTypeIdentifierDietaryNiacin 烟酸
+24.HKQuantityTypeIdentifierDietaryFolate 叶酸
+25.HKQuantityTypeIdentifierDietaryBiotin 生物素
+26.HKQuantityTypeIdentifierDietaryPantothenicAcid 泛酸
+27.HKQuantityTypeIdentifierDietaryPhosphorus 磷
+28.HKQuantityTypeIdentifierDietaryIodine 碘
+29.HKQuantityTypeIdentifierDietaryMagnesium 镁
+30.HKQuantityTypeIdentifierDietaryZinc 锌
+31.HKQuantityTypeIdentifierDietarySelenium 硒
+32.HKQuantityTypeIdentifierDietaryCopper 铜
+33.HKQuantityTypeIdentifierDietaryManganese 锰
+34.HKQuantityTypeIdentifierDietaryChromium 铬
+35.HKQuantityTypeIdentifierDietaryMolybdenum 钼
+36.HKQuantityTypeIdentifierDietaryChloride 氯化物
+37.HKQuantityTypeIdentifierDietaryPotassium 钾
+38.HKQuantityTypeIdentifierDietaryCaffeine 咖啡因
+39.HKQuantityTypeIdentifierDietaryWater 水
+40.HKQuantityTypeIdentifierUVExposure 紫外线指数
+ 
+ 1. HKCategoryTypeIdentifierSleepAnalysis 睡眠分析
+ 2. HKCategoryTypeIdentifierCervicalMucusQuality 宫颈粘液质量
+ 3. HKCategoryTypeIdentifierOvulationTestResult 排卵测试结果
+ 4. HKCategoryTypeIdentifierMenstrualFlow 月经
+ 5. HKCategoryTypeIdentifierIntermenstrualBleeding 点滴出血
+ 6. HKCategoryTypeIdentifierSexualActivity 性行为
+ 
+ //不允许share
+ 7. HKCategoryTypeIdentifierAppleStandHour 站立小时
+ 
+ //不允许share
+ 1. HKCharacteristicTypeIdentifierBiologicalSex 性别
+ 2. HKCharacteristicTypeIdentifierBloodType 血型
+ 3. HKCharacteristicTypeIdentifierDateOfBirth 出生日期
+ 4. HKCharacteristicTypeIdentifierFitzpatrickSkinType 日光反应型皮肤类型
+
+ //不允许share And read
+ 1.HKCorrelationTypeIdentifierBloodPressure 血压
+ 2.HKCorrelationTypeIdentifierFood 食物
+
+ 1.HKWorkoutTypeIdentifier  体能训练
+*/
