@@ -55,3 +55,8 @@
 
 ##TableViewVew搜索高亮显示
 ##![效果图](http://g.recordit.co/Fq3m5PI4wE.gif)
+
+# 
+
+##ReadHealthSteps读取健康步数
+##![效果图](http://g.recordit.co/LvsPFn9UeE.gif)
