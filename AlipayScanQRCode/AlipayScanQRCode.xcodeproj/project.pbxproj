@@ -143,6 +143,7 @@
 				TargetAttributes = {
 					9A45FD311E5453B6009BA9EA = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 9ZL2LCLWLH;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -310,6 +311,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ZL2LCLWLH;
 				INFOPLIST_FILE = AlipayScanQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cocav.AlipayScanQRCode;
@@ -321,6 +323,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9ZL2LCLWLH;
 				INFOPLIST_FILE = AlipayScanQRCode/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cocav.AlipayScanQRCode;
@@ -347,6 +350,7 @@
 				9A45FD4B1E5453B6009BA9EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

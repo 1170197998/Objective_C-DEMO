@@ -153,17 +153,6 @@
     }
 }
 
-//获取扫描区域的比例关系
--(CGRect)getScanCrop:(CGRect)rect readerViewBounds:(CGRect)readerViewBounds
-{
-    CGFloat x,y,width,height;
-    x = (CGRectGetHeight(readerViewBounds) - CGRectGetHeight(rect)) / 2 / CGRectGetHeight(readerViewBounds);
-    y = (CGRectGetWidth(readerViewBounds) - CGRectGetWidth(rect)) / 2 / CGRectGetWidth(readerViewBounds);
-    width = CGRectGetHeight(rect) / CGRectGetHeight(readerViewBounds);
-    height = CGRectGetWidth(rect) / CGRectGetWidth(readerViewBounds);
-    return CGRectMake(x, y, width, height);
-}
-
 //恢复动画
 - (void)resumeAnimation
 {
