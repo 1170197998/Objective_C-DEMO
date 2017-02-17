@@ -17,7 +17,6 @@
 
 @interface ScanCodeController ()<AVCaptureMetadataOutputObjectsDelegate>
 @property (nonatomic, strong) AVCaptureSession *session;
-@property (nonatomic, weak) UIView *maskView;
 @property (nonatomic, strong) UIView *scanView;
 @property (nonatomic, strong) UIImageView *scanImageView;
 @end
@@ -33,10 +32,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.clipsToBounds=YES;
+    
     [self setupMaskView];
-    [self setupTipTitleView];
-    [self setupscanViewView];
+    [self setupScanView];
     [self beginScanning];
+    
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(resumeAnimation) name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
@@ -45,37 +45,19 @@
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void)setupTipTitleView{
-    
-    UIView *mask=[[UIView alloc] initWithFrame:CGRectMake(0, _maskView.y+_maskView.height, self.view.width, kBorderW+200)];
-    mask.backgroundColor=[UIColor colorWithRed:0 green:0 blue:0 alpha:0.6];
-    [self.view addSubview:mask];
-    
-    UILabel *tipLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, self.view.height * 0.9 - (SCREEN_HEIGHT / 7), self.view.bounds.size.width, (SCREEN_HEIGHT / 7))];
-    tipLabel.text = @"将二维码放入框内，即可扫描";
-    tipLabel.textColor = [UIColor whiteColor];
-    tipLabel.textAlignment = NSTextAlignmentCenter;
-    tipLabel.backgroundColor = [UIColor clearColor];
-    [self.view addSubview:tipLabel];
-}
-
 - (void)setupMaskView
 {
-    UIView *mask = [[UIView alloc] init];
-    _maskView = mask;
+    UIView *mask = [[UIView alloc] initWithFrame:CGRectMake(-(self.view.bounds.size.height - self.view.bounds.size.width) / 2, 0, self.view.bounds.size.height, self.view.bounds.size.height)];
     mask.layer.borderColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.6].CGColor;
-    mask.layer.borderWidth = kBorderW;
-    mask.bounds = CGRectMake(0, 0, self.view.width + kBorderW + kMargin * 2, self.view.width +kBorderW +kMargin * 2);
-    mask.center = CGPointMake(self.view.width * 0.5, self.view.height * 2 );
-    mask.y = 0;
+    mask.layer.borderWidth = (self.view.bounds.size.height - (SCREEN_WIDTH - kMargin * 2)) / 2;
     [self.view addSubview:mask];
 }
 
-- (void)setupscanViewView
+- (void)setupScanView
 {
     CGFloat scanViewH = self.view.width - kMargin * 2;
     CGFloat scanViewW = self.view.width - kMargin * 2;
-    _scanView = [[UIView alloc] initWithFrame:CGRectMake(kMargin, kBorderW, scanViewW, scanViewH)];
+    _scanView = [[UIView alloc] initWithFrame:CGRectMake(kMargin, (self.view.bounds.size.height - scanViewW) / 2, scanViewW, scanViewH)];
     _scanView.clipsToBounds = YES;
     [self.view addSubview:_scanView];
     
