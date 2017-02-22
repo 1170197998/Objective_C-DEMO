@@ -31,8 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.clipsToBounds=YES;
     
+    self.view.clipsToBounds=YES;
     [self setupMaskView];
     [self setupScanView];
     [self beginScanning];
