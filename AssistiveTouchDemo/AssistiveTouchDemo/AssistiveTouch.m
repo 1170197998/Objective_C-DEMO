@@ -35,7 +35,7 @@
 
 -(void)click
 {
-    NSLog(@"click");
+    NSLog(@"全局有效");
 }
 
 ///手势事件 －－ 改变位置
