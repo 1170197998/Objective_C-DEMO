@@ -27,9 +27,7 @@
     self.tableView.dataSource = self;
 }
 
-/**
- *  初始化数据源
- */
+// 初始化数据
 - (NSMutableArray *)dataSource
 {
     if (_dataSource == nil) {
