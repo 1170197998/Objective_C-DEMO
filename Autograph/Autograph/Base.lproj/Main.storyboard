@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--电子签名-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="udy-WF-Bmh">
-                                <rect key="frame" x="66" y="567" width="243" height="50"/>
+                                <rect key="frame" x="66" y="597" width="243" height="50"/>
                                 <color key="backgroundColor" red="1" green="0.47482889160000002" blue="0.41870268570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="EKb-Oq-Svq"/>
@@ -31,35 +31,53 @@
                                 </constraints>
                                 <state key="normal" title="签名完成"/>
                                 <connections>
-                                    <segue destination="AX2-wO-u23" kind="show" id="ssq-zO-k5I"/>
+                                    <action selector="push:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wjx-Xu-qYK"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ekf-qe-KAM">
                                 <rect key="frame" x="0.0" y="144" width="375" height="323"/>
                                 <color key="backgroundColor" red="0.72336632013320923" green="0.70283206714109825" blue="0.34461057384725763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3p-cO-TEP">
+                                <rect key="frame" x="66" y="531" width="243" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.47482889160000002" blue="0.41870268570000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EUH-pU-VPV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="Q79-w5-Zj1"/>
+                                </constraints>
+                                <state key="normal" title="撤销重签"/>
+                                <connections>
+                                    <action selector="cancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftx-4p-dzD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="udy-WF-Bmh" secondAttribute="bottom" constant="50" id="3bo-Er-lJU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="udy-WF-Bmh" secondAttribute="bottom" constant="20" id="3bo-Er-lJU"/>
                             <constraint firstAttribute="trailingMargin" secondItem="udy-WF-Bmh" secondAttribute="trailing" constant="50" id="Aj4-WJ-5l6"/>
+                            <constraint firstItem="f3p-cO-TEP" firstAttribute="leading" secondItem="udy-WF-Bmh" secondAttribute="leading" id="Scc-WH-apw"/>
                             <constraint firstItem="ekf-qe-KAM" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="TQs-IT-S3V"/>
                             <constraint firstItem="ekf-qe-KAM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Z6Y-VK-5NL"/>
-                            <constraint firstItem="udy-WF-Bmh" firstAttribute="top" secondItem="ekf-qe-KAM" secondAttribute="bottom" constant="100" id="c2n-l2-O3U"/>
+                            <constraint firstItem="f3p-cO-TEP" firstAttribute="trailing" secondItem="udy-WF-Bmh" secondAttribute="trailing" id="auv-cX-p0e"/>
+                            <constraint firstItem="udy-WF-Bmh" firstAttribute="top" secondItem="ekf-qe-KAM" secondAttribute="bottom" constant="130" id="c2n-l2-O3U"/>
                             <constraint firstAttribute="trailing" secondItem="ekf-qe-KAM" secondAttribute="trailing" id="edu-RK-MuV"/>
+                            <constraint firstItem="udy-WF-Bmh" firstAttribute="top" secondItem="f3p-cO-TEP" secondAttribute="bottom" constant="16" id="sYe-ug-eLe"/>
                             <constraint firstItem="udy-WF-Bmh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="50" id="uta-q6-Brf"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="0ph-op-Tek"/>
+                    <navigationItem key="navigationItem" title="电子签名" id="0ph-op-Tek"/>
+                    <connections>
+                        <outlet property="imageView" destination="ekf-qe-KAM" id="BRi-df-792"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="273" y="-515"/>
         </scene>
-        <!--Sign View Controller-->
+        <!--SignViewController-->
         <scene sceneID="fa5-Lp-Ql2">
             <objects>
-                <viewController id="AX2-wO-u23" customClass="SignViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="sign" id="AX2-wO-u23" userLabel="SignViewController" customClass="SignViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JU9-yx-eSd"/>
                         <viewControllerLayoutGuide type="bottom" id="2oD-W3-3Cw"/>
@@ -69,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hf1-4Q-76e">
-                                <rect key="frame" x="0.0" y="144" width="375" height="323"/>
+                                <rect key="frame" x="0.0" y="100" width="375" height="367"/>
                                 <color key="backgroundColor" red="0.72336632010000002" green="0.70283206710000001" blue="0.34461057379999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
@@ -81,6 +99,9 @@
                             <constraint firstAttribute="trailing" secondItem="hf1-4Q-76e" secondAttribute="trailing" id="yV9-K8-35S"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="hf1-4Q-76e" id="czf-gj-sRB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ewp-g8-dzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
