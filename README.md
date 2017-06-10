@@ -70,3 +70,8 @@
 
 ##AlipayScanQRCode 仿支付宝二维码扫描效果
 ##![效果图](http://g.recordit.co/vVSYycCDMd.gif)
+
+# 
+
+##Autograph 电子签名生成图片
+##![效果图](http://g.recordit.co/V7jnKVOvDt.gif)
