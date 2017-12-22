@@ -75,3 +75,8 @@
 
 ## Autograph 电子签名生成图片
 ## ![效果图](http://g.recordit.co/V7jnKVOvDt.gif)
+
+#
+
+## PieChart 饼图
+## ![效果图](http://g.recordit.co/2jsZk9DqWp.gif)
